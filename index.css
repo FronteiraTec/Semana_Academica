@@ -285,3 +285,14 @@
         width: 30vw;
     }
 }
+
+/*menor que 500px*/
+
+@media screen  and (max-width: 500px){ 
+    .main__programmations__interval{
+        flex-direction: column;
+        row-gap: 10px;
+        margin: auto;
+    }
+    
+}
