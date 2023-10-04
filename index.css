@@ -33,7 +33,7 @@
 .main__titleDiv__title {
     background-color: #C3A254;
     margin: auto;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     padding-inline: 2rem;
     padding-block: 1rem;
     font-family: 'Poppins', sans-serif;
@@ -45,7 +45,7 @@
     display: flex;
     justify-content: center;
     margin-block-start: 1vw;
-    font-size: 2.1rem;
+    font-size: 1.7rem;
     padding-inline: 1.5rem;
     padding-block: 0.5rem;
     font-family: 'Poppins', sans-serif;
@@ -59,6 +59,7 @@
     font-size: 2rem;
     padding: 1vw;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 14px 0px;
+  /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
 }
 
 .main__image {
@@ -78,11 +79,11 @@
 }
 
 .main__programmations__div__interval {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    row-gap: 3rem;
-    width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 3rem;
+  width: 30vw;
 }
 
 .main__programmations__div__div {
@@ -149,31 +150,31 @@
         row-gap: 2rem;
     }
 
-    .main__titleDiv__title {
-        padding-inline-start: 1.5rem;
-        padding-block: 0.7rem;
-        font-size: 2rem;
-    }
+  .main__titleDiv__title {
+    padding-inline-start: 1.5rem;
+    padding-block: 0.7rem;
+    font-size: 2rem;
+  }
 
-    .main__titleDiv__title_v2 {
-        font-size: 1.8rem;
-    }
+  .main__titleDiv__title_v2 {
+    font-size: 1.8rem;
+  }
 
-    .main__programmations__div__div__title {
-        font-size: 1.1rem;
-    }
+  .main__programmations__div__div__title {
+    font-size: 1.1rem;
+  }
 
-    .main__programmations__div__div__title__type2 {
-        font-size: 1.1rem;
-    }
+  .main__programmations__div__div__title__type2 {
+    font-size: 1.1rem;
+  }
 
-    .main__programmations__div__div__anotherTitle {
-        font-size: 1rem;
-    }
+  .main__programmations__div__div__anotherTitle {
+    font-size: 1rem;
+  }
 
-    .main__programmations__div__div__subtitle {
-        font-size: 0.8rem;
-    }
+  .main__programmations__div__div__subtitle {
+    font-size: 0.8rem;
+  }
 
     .main__image {
         width: 5rem;
@@ -209,16 +210,11 @@
         margin: auto;
     }
 
-    .main__programmations__interval {
-        flex-direction: column;
-        row-gap: 3rem;
-        margin: auto;
-    }
-
-    .main__programmations__div__interval {
-        width: 80vw;
-    }
-
+  .main__programmations__interval {
+    flex-direction: column;
+    row-gap: 3rem;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 471px) and (max-width: 548px) {
@@ -247,7 +243,28 @@
 
 /* Entre 420 e 775 */
 
-@media screen and (min-width: 548px) and (max-width: 776px) {
+@media screen and (min-width: 548px) and (max-width: 666px) {
+  .main__programmations__div {
+    flex-direction: column;
+    row-gap: 2rem;
+    margin: auto;
+  }
+
+  .main__programmations__interval {
+    flex-direction: column;
+    row-gap: 3rem;
+    margin: auto;
+  }
+
+  .main__programmations__div__interval {
+    width: 60vw;
+  }
+
+  .main__titleDiv__title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 667px) and (max-width: 776px) {
 
     .main__programmations__div {
         flex-direction: column;
@@ -262,37 +279,30 @@
     }
 
     .main__programmations__div__interval {
-        width: 60vw;
+        width: 50vw;
     }
+
+  .main__titleDiv__title {
+    font-size: 1.5rem;
+  }
 }
 
 /* Entre 776px e 948px */
 
 @media screen and (min-width: 776px) and (max-width: 1124px) {
-    .main__programmations__interval {
-        flex-direction: column;
-        row-gap: 3rem;
-        margin: auto;
-    }
-
-    .main__programmations__div__interval {
-        width: 40vw;
-    }
-}
-
-@media (min-width: 1124px) {
-    .main__programmations__div__interval {
-        width: 30vw;
-    }
+  .main__programmations__interval {
+    flex-direction: column;
+    row-gap: 3rem;
+    margin: auto;
+  }
+  
 }
 
 /*menor que 500px*/
 
-@media screen  and (max-width: 500px){ 
-    .main__programmations__interval{
-        flex-direction: column;
-        row-gap: 10px;
-        margin: auto;
-    }
-    
+@media screen and (max-width: 500px) {
+  .main__programmations__interval {
+    flex-direction: column;
+    margin: auto;
+  }
 }
