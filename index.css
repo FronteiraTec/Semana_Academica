@@ -146,9 +146,9 @@
 
 @media screen and (max-width: 470px) {
 
-    .main {
-        row-gap: 2rem;
-    }
+  .main {
+      row-gap: 2rem;
+  }
 
   .main__titleDiv__title {
     padding-inline-start: 1.5rem;
@@ -193,7 +193,7 @@
     }
 
     .main__programmations__div__interval {
-        width: 90vw;
+        width: auto;
     }
 
 }
@@ -289,12 +289,40 @@
 
 /* Entre 776px e 948px */
 
-@media screen and (min-width: 776px) and (max-width: 1124px) {
+@media screen and (min-width: 840px) and (max-width: 1124px) {
   .main__programmations__interval {
     flex-direction: column;
     row-gap: 3rem;
     margin: auto;
   }
+
+  .main__programmations__div__interval {
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 776px) and (max-width: 840px) {
+  .main__programmations__interval {
+    flex-direction: column;
+    row-gap: 3rem;
+    margin: auto;
+  }
+
+  .main__programmations__div__interval {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 1124px) and (max-width: 1300px) {
+  .main__programmations__interval {
+    flex-direction: column;
+    row-gap: 3rem;
+    margin: auto;
+  }
+
+  .main__programmations__div__interval {
+    width: 40vw;
+}
   
 }
 
