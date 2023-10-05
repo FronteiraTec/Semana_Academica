@@ -484,7 +484,7 @@ body {
 .main__programmations__div__div_withImage {
   display: flex;
   gap: 3vw;
-  width: 70vw;
+  width: 64vw;
   margin: auto;
 }
 
@@ -566,13 +566,27 @@ body {
   grid-template-areas: "main_grapper_1 main_grapper_2";
 }
 
-@media screen and (max-width: 1124px) {
+@media screen and (max-width: 1641px) { 
+  .main__programmations__div__div_withImage {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 1381px) { 
+  .main__programmations__div__div_withImage {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 1206px) { 
+  .main__programmations__div__div_withImage {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 1134px) {
   .main__titleDiv__title {
     font-size: 1.5rem;
-  }
-
-  .main__programmations__div__div_withImage {
-    width: 80vw;
   }
 
   .codingChallenge__title {
