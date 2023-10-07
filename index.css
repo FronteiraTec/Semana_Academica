@@ -14,14 +14,6 @@
   color: white;
 }
 
-/* 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 1em;
-}
-*/
 body {
     color: #1d1c48 !important;
 } 
@@ -78,9 +70,6 @@ body {
 }
 
 @media screen and (max-width : 776px) {
-  .container {
-      width: 100vh;
-  }
 
   .palestrantes {
       margin: 0 auto;
@@ -337,8 +326,19 @@ body {
     .main__programmations__div__interval {
         width: 90vw;
     }
-    
-
+    .main_footer_sponsorship_and_support{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 8em;
+  }
+  
+  .main_footer_sponsorship_and_support img {
+      max-width: 8em;
+  }
+  .main_footer_organization img {
+      max-width: 5em;
+  }
 }
 
 @media screen and (min-width: 405px) and (max-width: 470px) {
@@ -362,7 +362,26 @@ body {
   .header_buttons_titles {
     display: none;
   }
+}
 
+@media screen and (min-width: 776px) and (max-width: 1124px) {
+  .header_title {
+    font-size: 1.5rem;
+  }
+
+  .header_strip_title {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .header_image_title {
+    width: 45rem;
+    align-self: center;
+  }
+
+  .header_title {
+    align-self: center;
+  }
 }
 
 @media screen and (min-width: 776px) and (max-width: 1124px) {
@@ -412,6 +431,22 @@ body {
   }
 }
 
+
+@media screen and (min-width: 548px) and (max-width: 776px) {
+  .main_footer_organization {
+    flex-direction: column;
+    /* max-width: 60%; */
+  }
+  .main_footer_organization img {
+    flex-direction: column;
+    /* max-width: 60%; */
+  }
+
+  .main_footer_sponsorship_ouro img{
+    flex-direction: column;
+  }
+}
+
 @media screen and (min-width: 548px) and (max-width: 776px) {
   .header_title {
     font-size: 1.5rem;
@@ -437,18 +472,6 @@ body {
   .header_buttons_titles {
     margin: 2rem;
     font-size: 0.7rem;
-  }
-  .main_footer_organization {
-    flex-direction: column;
-    /* max-width: 60%; */
-  }
-  .main_footer_organization img {
-    flex-direction: column;
-    /* max-width: 60%; */
-  }
-
-  .main_footer_sponsorship_ouro img{
-    flex-direction: column;
   }
 }
 
@@ -500,7 +523,7 @@ body {
 .main__programmations {
   display: flex;
   flex-direction: column;
-  row-gap: 3rem;
+  row-gap: 5rem;
 }
 
 .main__titleDiv {
@@ -511,7 +534,7 @@ body {
 .main__titleDiv__title {
   background-color: #c3a254;
   margin: auto;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding-inline: 2rem;
   padding-block: 1rem;
   font-family: "Poppins", sans-serif;
@@ -523,7 +546,7 @@ body {
   display: flex;
   justify-content: center;
   margin-block-start: 1vw;
-  font-size: 2.1rem;
+  font-size: 1.7rem;
   padding-inline: 1.5rem;
   padding-block: 0.5rem;
   font-family: "Poppins", sans-serif;
@@ -536,35 +559,54 @@ body {
   font-weight: 900;
   font-size: 2rem;
   padding: 1vw;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 14px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.main__images__6 {
+  width: fit-content;
+  text-align: center;
+}
+
+.main__programmations__div__div__info {
+  margin: auto 0;
 }
 
 .main__image {
-  width: 6rem;
-  border-radius: 40%;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  position: relative;
+  right: -20px;
+  bottom: 40px;
 }
 
-.main__programmations__interval {
-  display: flex;
-  justify-content: space-evenly;
+.main__image_2 {
+  margin: auto;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  z-index: 2;
 }
 
 .main__programmations__div {
-  display: flex;
-  justify-content: space-around;
-}
-
-.main__programmations__div__interval {
-  display: flex;
-  justify-content: space-between;
+  margin: auto;
   flex-direction: column;
-  row-gap: 3rem;
-  width: 30vw;
+  row-gap: 5rem;
+  display: flex;
 }
 
 .main__programmations__div__div {
   display: flex;
-  gap: 2vw;
+  gap: 3vw;
+  max-width: 80vw;
+  margin: auto;
+}
+
+.main__programmations__div__div_withImage {
+  display: flex;
+  gap: 3vw;
+  width: 64vw;
+  margin: auto;
 }
 
 .main__programmations__div__div__hours {
@@ -578,21 +620,27 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 1.7rem;
+  text-align: justify;
 }
 
 .main__programmations__div__div__icon {
-  margin: auto;
+  margin: auto 0;
   display: flex;
   gap: 1vw;
 }
 
+.main__programmations__div__div__pImages {
+  display: flex;
+  margin: auto 0;
+}
+
 .main__programmations__div__div__grap {
   margin: auto;
-  /* padding-inline: 2vw; */
 }
 
 .main__programmations__div__div__icon i {
-  margin: auto;
+  margin: auto 0;
+  font-size: 1.3rem;
   color: goldenrod;
 }
 
@@ -603,7 +651,27 @@ body {
 
 .main__programmations__div__div__anotherTitle {
   font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  color: rgb(219, 218, 218);
+  font-size: 1.3rem;
+}
+
+.codingChallenge__title {
+  background-color: #c3a254;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  padding-inline: 1.5rem;
+  padding-block: 0.5rem;
+  font-family: "Poppins", sans-serif;
   font-weight: 900;
+}
+
+.main__programmations__div__div__anotherTitle_title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  color: rgb(110, 107, 107);
   font-size: 1.3rem;
 }
 
@@ -619,148 +687,190 @@ body {
   grid-template-areas: "main_grapper_1 main_grapper_2";
 }
 
-@media screen and (max-width: 470px) {
-  .main {
-    row-gap: 2rem;
+@media screen and (max-width: 1641px) { 
+  .main__programmations__div__div_withImage {
+    width: 75vw;
   }
+}
 
-  .main__titleDiv__title {
-    padding-inline-start: 1.5rem;
-    padding-block: 0.7rem;
-    font-size: 2rem;
+@media screen and (max-width: 1381px) { 
+  .main__programmations__div__div_withImage {
+    width: 85vw;
   }
+}
 
-  .main__titleDiv__title_v2 {
-    font-size: 1.8rem;
-  }
-
-  .main__programmations__div__div__title {
-    font-size: 1.1rem;
-  }
-
-  .main__programmations__div__div__title__type2 {
-    font-size: 1.1rem;
-  }
-
-  .main__programmations__div__div__anotherTitle {
-    font-size: 1rem;
-  }
-
-  .main__programmations__div__div__subtitle {
-    font-size: 0.8rem;
-  }
-
-  .main__image {
-    width: 5rem;
-  }
-
-  .main__programmations__div {
-    flex-direction: column;
-    row-gap: 2.5rem;
-    margin: auto;
-  }
-
-  .main__programmations__interval {
-    flex-direction: column;
-    row-gap: 3rem;
-    margin: auto;
-  }
-
-  .main__programmations__div__interval {
+@media screen and (max-width: 1206px) { 
+  .main__programmations__div__div_withImage {
     width: 90vw;
   }
 }
 
-@media screen and (min-width: 405px) and (max-width: 470px) {
+@media screen and (max-width: 1134px) {
+  .main__titleDiv__title {
+    font-size: 1.5rem;
+  }
+
+  .codingChallenge__title {
+    font-size: 1.5rem;
+  }
+
+  .main__titleDiv__title_v2 {
+    font-size: 1.3rem;
+  }
+  
+  .main__programmations__div__div__title {
+    font-size: 1.2rem;
+  }
+
+  .main__programmations__div__div__anotherTitle {
+    font-size: 1.1rem;
+  }
+
+  .main__programmations__div__div__anotherTitle_title {
+    font-size: 1rem;
+  }
+
+  .main__image_2, .main__image {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 824px) {
+  .codingChallenge__title {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 717px) {
+
+  .main {
+    row-gap: 3rem;
+  }
+
+  .codingChallenge__title {
+    font-size: 1.2rem;
+  }
+
+  .main_titleDiv__dayTitle {
+    font-size: 1.4rem;
+  }
+
+  .main__titleDiv__title_v2 {
+    font-size: 1.2rem;
+  }
+  
+  .main__programmations__div__div__title {
+    font-size: 0.9rem;
+  }
+
+  .main__programmations__div__div__anotherTitle {
+    font-size: 0.85rem;
+  }
+
+  .main__programmations__div__div__anotherTitle_title {
+    font-size: 1rem;
+  }
+
+  .main__image_2, .main__image {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .main__programmations__div__div__hours {
+    font-size: 1rem;
+  }
+
+  .main__programmations__div__div__subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 554px) { 
+  .main__image_2, .main__image {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .main__image {
+    right: -25px;
+    bottom: 33px;
+  }
+}
+
+@media screen and (max-width: 506px) { 
+
   .main {
     row-gap: 2rem;
   }
 
   .main__programmations__div {
-    flex-direction: column;
     row-gap: 2.5rem;
-    margin: auto;
   }
 
-  .main__programmations__interval {
-    flex-direction: column;
-    row-gap: 3rem;
-    margin: auto;
+  .main__image_2, .main__image {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
-  .main__programmations__div__interval {
-    width: 80vw;
-  }
-}
-
-@media screen and (min-width: 471px) and (max-width: 548px) {
-  .main {
-    row-gap: 2rem;
+  .codingChallenge__title {
+    font-size: 1rem;
   }
 
-  .main__programmations__div {
-    flex-direction: column;
-    row-gap: 2.5rem;
-    margin: auto;
+  .main_titleDiv__dayTitle {
+    font-size: 1.2rem;
   }
 
-  .main__programmations__interval {
-    flex-direction: column;
-    row-gap: 3rem;
-    margin: auto;
+  .main__titleDiv__title_v2 {
+    font-size: 1rem;
+  }
+  
+  .main__programmations__div__div__title {
+    font-size: 0.8rem;
   }
 
-  .main__programmations__div__interval {
-    width: 70vw;
-  }
-}
-
-/* Entre 420 e 775 */
-
-@media screen and (min-width: 548px) and (max-width: 776px) {
-  .main__programmations__div {
-    flex-direction: column;
-    row-gap: 2.5rem;
-    margin: auto;
+  .main__programmations__div__div__anotherTitle {
+    font-size: 0.7rem;
   }
 
-  .main__programmations__interval {
-    flex-direction: column;
-    row-gap: 3rem;
-    margin: auto;
+  .main__programmations__div__div__anotherTitle_title {
+    font-size: 0.8rem;
   }
 
-  .main__programmations__div__interval {
-    width: 60vw;
+  .main__programmations__div__div__hours {
+    font-size: 0.85rem;
+  }
+
+  .main__programmations__div__div__subtitle {
+    font-size: 0.6rem;
+  }
+
+  .main__programmations__div__div__icon i {
+    font-size: 1rem;
+  }
+
+  .main__programmations__div__div_withImage {
+    width: 90vw;
   }
 }
 
-/* Entre 776px e 948px */
+@media screen and (max-width: 420px) { 
 
-@media screen and (min-width: 776px) and (max-width: 1124px) {
-  .main__programmations__interval {
-    flex-direction: column;
-    row-gap: 3rem;
-    margin: auto;
+  .codingChallenge__title {
+    font-size: 0.8rem;
   }
 
-  .main__programmations__div__interval {
-    width: 40vw;
+  .main__programmations__div__div__title {
+    font-size: 0.7rem;
   }
-}
-
-@media (min-width: 1124px) {
-  .main__programmations__div__interval {
-    width: 30vw;
+  
+  .main__programmations__div__div__anotherTitle_title {
+    font-size: 0.6rem;
   }
-}
 
-/*menor que 500px*/
-
-@media screen and (max-width: 500px) {
-  .main__programmations__interval {
-    flex-direction: column;
-    row-gap: 10px;
-    margin: auto;
+  .main__titleDiv__title {
+    font-size: 1.2rem;
+    padding-inline: 1.5rem;
   }
+
 }
