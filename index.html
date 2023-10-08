@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <title>Semana Acâdemica Ciência da Computação</title>
     <link rel="stylesheet" type="text/css" href="./index.css" />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="stylesheet" type="text/css" href="./styleExtra.css" />
+   <!-- <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./styleExtra.css" />-->
 </head>
 
 <body>
@@ -17,9 +15,9 @@
         <div class="header_strip">
             <img class="header_image" src="./assets/LogoSemanaAcademica.png" />
             <div class="header_buttons">
-                <button class="header_buttons_titles">Programação</button>
-                <button class="header_buttons_titles">Palestrantes</button>
-                <button class="header_buttons_titles">Apoiadores</button>
+                <a class="header_buttons_titles" href="#Prog">Programação</a>
+                <a class="header_buttons_titles" href="#Palestra">Palestrantes</a>
+                <a class="header_buttons_titles" href="#Apoio">Apoiadores</a>
             </div>
         </div>
         <div class="header_strip_title">
@@ -35,7 +33,8 @@
                     <h1 class="header_infos_titles">Certificação de ACC's</h1>
                 </div>
 
-                <button class="header_buttons_inscricao">Inscreva-se</button>
+                <button class="header_buttons_inscricao"><a class="header_inscricao" href="https://forms.gle/rSCe1fMxw21vpifJ6
+                    ">Inscreva-se</a></button>
             </div>
         </div>
         <div class="header_strip_points">
@@ -63,6 +62,8 @@
             </div>
         </div>
     </header>
+
+    <a name="Prog"></a>
 
     <main class="main">
 
@@ -398,67 +399,86 @@
             </div>
         </div>
 
+        <a name="Palestra"></a>
         <div class="container" class="container-md">
-            <h2>Palestrantes</h2> <br>
+        <h1 class="main__titleDiv__title">Palestrantes</h1>
+        </div>
+            
             <div class="palestrantes" class="container-md">
                 <div class="caixa">
+                
                     <div class="imagem">
                         <img src="./assets/palestrantes/Andressa Celant.jpeg" alt="Andressa Celant">
                     </div>
-                    <h3 class="nome">Andressa Celant</h3>
-                    <p class="curriculo">Andressa é profissional de TI, graduou-se em Análise e Desenvolvimento de
+                    <h2 class="main__programmations__div__div__title">
+                        Andressa Celant
+                    </h2>
+                    
+             
+                    <h3 class="main__programmations__div__div__subtitle">
+                        Andressa é profissional de TI, graduou-se em Análise e Desenvolvimento de
                         Sistemas pela
                         UTFPR e obteve uma especialização em Arquitetura de Software Distribuído pela PUC-MG, além de um
                         MBA em
-                        Gestão da Tecnologia da Informação pela FIAP. Inicialmente, começou como Desenvolvedora Java
-                        FullStack Jr na Desbravador Software, progredindo para o cargo de Scrum Master e,
-                        posteriormente, para Gerente de Desenvolvimento Web. Atualmente, ocupa as posições de CTO e DPO
+                        Gestão da Tecnologia da Informação pela FIAP. Atualmente, ocupa as posições de CTO e DPO
                         na empresa, liderando a estratégia tecnológica e garantindo a conformidade com a LGPD. Enquanto
                         isso, está cursando uma Pós-Graduação em Arquitetura de Software pela FIAP e conquistou
-                        certificações em Kanban, LGPD, Customer Success e Liderança</p>
+                        certificações em Kanban, LGPD, Customer Success e Liderança.
+                    </h3>
                 </div>
                 <div class="caixa">
                     <div class="imagem">
                         <img src="assets/palestrantes/Sergio Lehmen.jpeg" alt="Sergio Lehmen">
                     </div>
-                    <h3 class="nome">Sergio Lehmen</h3>
-                    <p class="curriculo">Sergio Lehmen é um profissional com formação em Informática pela Unoesc e
+                    <h2 class="main__programmations__div__div__title">
+                        Sergio Lehmen
+                    </h2>
+                    <h3 class="main__programmations__div__div__subtitle">
+                        Sergio Lehmen é um profissional com formação em Informática pela Unoesc e
                         Pós-graduação em Administração de Sistemas pela UFLA. Sua carreira teve início como programador
                         em 2000, e, em 2004, ingressou na Desbravador Software, onde tem desempenhado um papel
                         fundamental por mais de uma década. Atualmente, Sergio atua como Coordenador de Desenvolvimento,
                         trazendo consigo uma vasta experiência e expertise em tecnologia da informação e liderança na
-                        área de desenvolvimento de software</p>
+                        área de desenvolvimento de software.
+                    </h3>
                 </div>
                 <div class="caixa">
                     <div class="imagem">
                         <img src="./assets/palestrantes/GustavoMarques.jpeg" alt="Gustavo Marques">
                     </div>
-                    <h3 class="nome">Gustavo Marques</h3>
-                    <p class="curriculo">Gustavo Marques, CFO da AMO Sistemas, responsável pelas áreas Financeira,
+                    <h2 class="main__programmations__div__div__title">
+                        Gustavo Marques
+                    </h2>
+                    <h3 class="main__programmations__div__div__subtitle">
+                        Gustavo Marques, CFO da AMO Sistemas, responsável pelas áreas Financeira,
                         Gestão de Pessoas, Jurídica, e Logística; Empreendedor, mentor e consultor empresarial com 18
                         anos de experiência junto a empresas de todos os segmentos. São 13 anos de docência e
                         coordenação de cursos. Atuação por 11 anos junto ao SEBRAE de São Paulo, criando conteúdo de
                         gestão, palestrante, consultor e gerente executivo para o Estado de SP em programas de Acesso a
                         Serviços Financeiros e Mercados (Nacional e Internacional); Graduado em administração de
                         empresas, com mestrado em Desenvolvimento Regional e Meio Ambiente e especialização em
-                        história e filosofia</p>
+                        história e filosofia.
+                    </h3>
                 </div>
                 <div class="caixa">
                     <div class="imagem">
                         <img src="assets/palestrantes/IlvacirFranceschi.jpeg" alt="Ilvacir Franceschi">
                     </div>
-                    <h3 class="nome">Ilvacir Franceschi</h3>
-                    <p class="curriculo">Formado em Tecnologia em Redes de Computadores pela Uceff Chapeco, Especialista
+                    <h2 class="main__programmations__div__div__title">
+                        Ilvacir Franceschi
+                    </h2>
+                    <h3 class="main__programmations__div__div__subtitle">
+                        Formado em Tecnologia em Redes de Computadores pela Uceff Chapeco, Especialista
                         em Segurança da Informação pela Uceff Chapeco, especialista em Perícia Criminal Forense pelo
                         Ipog, certificado LPIC pela LPIBrasil para administração de sistemas operacionais Linux.
                         Atua com Tecnologia e Segurança da Informação a mais de 10 anos, trabalha com administração de
                         datacenters, servidores, serviços, rotinas, processos e times de alta performance, com intúito
-                        de minimizar impactos relacionados a disponibilidade, estabilidade, integridade.</p>
+                        de minimizar impactos relacionados a disponibilidade, estabilidade, integridade.
+                    </h3>
                 </div>
             </div>
-        </div>
 
-
+        <a name="Apoio"></a>
         <div class="main_footer_sponsorship_and_support_and_organization">
             <div class="main_footer_sponsorship">
                 <div class="main_footer_sponsorship_ouro">
