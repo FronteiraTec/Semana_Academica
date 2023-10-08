@@ -1,4 +1,4 @@
-# Site da IX Semana Acadêmica CC
+# Site da IX Semana Acadêmica de CC
 
 ## Integrantes
 
