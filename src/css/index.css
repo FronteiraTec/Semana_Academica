@@ -328,9 +328,16 @@ a {
 
 }*/
 .main_footer_sponsorship_bronze img {
-  max-width: 8em;
+  max-width: 6em;
 }
-
+.main_footer_sponsorship_diamante img {
+  max-width: 8em;
+  width: 100%;
+}
+.main_footer_sponsorship_diamante_p {
+  color: #2AA9BA;
+  display: inline;
+}
 .main_footer_sponsorship_ouro_p {
   color: #ffd700;
   display: inline;
@@ -342,7 +349,7 @@ a {
 }
 
 .main_footer_organization img {
-  max-width: 5em;
+  max-width: 4em;
   margin: 0.5em;
 }
 
